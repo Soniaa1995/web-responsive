@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="web.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/244b5c6e83.js" crossorigin="anonymous"></script>
+    <title>GitHub</title>
+</head>
+<body>
+    <header>
+        <!--menu-->
+        <nav class="navbar pc">
+            <div class="container-right">
+                <div>
+                    <!--logo gitHub-->
+                    <div class="navbar-logo">
+                        <img src="/imagenes/git.png" alt="logo">
+                    </div>
+                </div>
+
+                <div>
+                    <!--desplegables del menu-->
+                    <div class="dropdown">
+                        <button class="dropbtn">Products
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Packages</a>
+                            <a href="#">Security</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Solutions
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Packages</a>
+                            <a href="#">Security</a>
+                        </div>
+                    </div>
+
+                    <div class="dropdown">
+                        <button class="dropbtn">Open Source
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Packages</a>
+                            <a href="#">Security</a>
+                        </div>
+                    </div>
+                    <!--menu sin desplehable-->
+                    <a href="#pricing">Pricing</a>
+                </div>
+            </div>
+
+            <div class="container-left">
+                <div class="container-search-left">
+                <!--barra de busqueda-->
+                    <i class="fa fa-search icon-search"></i>
+                    <input type="text" class="search" placeholder="Search or jump to..">
+                </div>
+
+                <div class="container-btn-right">
+                <!--boton registro + inicio sesion-->
+                    <button class="btn sign-in">Sign in</button>
+                    <button class="btn sign-up">Sign up</button>
+                </div>
+            </div>
+        </nav>
+        <!--nabvar responsive-->
+        <nav class="navbar movil">
+            <div class="btn-movil">
+                <button class="btn sign-up">Sign up</button>
+            </div>
+
+            <!--logo gitHub-->
+            <div class="navbar-logo">
+                <img src="/imagenes/git.png" alt="logo">
+            </div>
+            <!--icono menu-->
+            <div class="menu-bar" onclick="mostrarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+        <!--links movil-->
+        <div class="menu-movil" id="menu-bar">
+            <div class="link-movil">
+                <a href="#">Products</a>
+                <a href="#">Solutions</a>
+                <a href="#">Open Source</a>
+                <a href="#">Pricing</a>
+            </div>
+            <div class="search-movil">
+                <!--barra de busqueda-->
+                <i class="fa fa-search icon-search"></i>
+                <input type="text" class="search" placeholder="Search or jump to..">
+            </div>
+            <div class="btn-movil">
+                <button class="btn sign-in-movil">Sign in</button>
+            </div>
+        </div>
+    </header>
+
+    <!--MAIN PC-->
+    <main class="container-principal">
+        <section class="section1">
+            <div class="caja">
+                <hr class="linea-vertical linea1">
+                <div class="contenedor2">
+                    <h1>Let's build from here</h1>
+                    <h4>The world's leading AI-prowered developer plataform</h4>
+                </div>
+                
+                <!--icono de flecha para separar los hr-->
+                <i class="fa-solid fa-arrow-right icon-arrow"></i>
+                <div class="botones">
+                    <input type="text" placeholder="userName">
+                    <button type="submit" id="botones-btn">Sign up for GitHub</button>
+                    <!--linea horizontal para responsive-->
+                    <hr id="linea-horizontal">
+                    <button id="botones-btn2">Start a free enterprise trial</button>
+                </div>
+            </div>
+            
+            <div class="caja">
+                <hr class="linea-vertical linea2">
+                <div class="contenedor3">
+                    <h4 id="contenedor3-h4">Trusted by the world's leading organizations</h4>
+                    <!--imagenes de publicidad de git-->
+                    <div id="publi">
+                        <img class="publi-style" src="/imagenes/3m.svg" alt="">
+                        <img class="publi-style" src="/imagenes/kpmg.svg" alt="">
+                        <img class="publi-style" src="/imagenes/mercedes.svg" alt="">
+                        <img class="publi-style" src="/imagenes/sap.svg" alt="">
+                        <img class="publi-style" src="/imagenes/pg.svg" alt="">
+                        <img class="publi-style" src="/imagenes/telusç.svg" alt="">
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+        <div class="enlaces">
+            <span>&copy;2023 GitHub, Inc.</span>
+            <a href="#">Terms</a>
+            <a href="#">Privacity</a>
+            <a href="#">(Updated 08/2022)</a>
+            <a href="#">Sitemap</a>
+            <a href="#">What is Git?</a>
+        </div>
+        <!--Redes sociales del footer-->
+        <div class="redes">
+            <i class="fa-brands fa-x-twitter"><a href="#"></a></i>
+            <i class="fa-brands fa-square-facebook"><a href="#"></a></i>
+            <i class="fa-brands fa-linkedin-in"><a href="#"></a></i>
+            <i class="fa-brands fa-youtube"><a href="#"></a></i>
+            <i class="fa-brands fa-twitch"><a href="#"></a></i>
+            <i class="fa-brands fa-tiktok"><a href="#"></a></i>
+            <i class="fa-brands fa-square-github"><a href="#"></a></i>
+        </div>
+    </footer>
+    <!--script para el boton responsive-->
+    <script src="web.js"></script>
+</body>
+</html>
